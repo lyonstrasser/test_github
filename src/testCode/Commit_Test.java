@@ -6,6 +6,7 @@ public class Commit_Test {
 		
 		System.out.println("Commit Message Test");
 		System.out.println("local commit test");
+		System.out.println("local commit test end");
 		
 	}
 
