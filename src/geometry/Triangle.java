@@ -25,5 +25,12 @@ public class Triangle extends Body {
 	public double area() {
 		return ((this.siteA / 2) * this.height);
 	}
+	
+	public String toString() {
+		return "Triangle:\n\t" + "Length of site a: " + this.siteA + 
+				"\n\tLength of site b: " + this.siteB + 
+				"\n\tLength of site c: " + this.siteC + 
+				"\n\tHeigth: " + this.height;
+	}
 
 }
