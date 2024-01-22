@@ -56,4 +56,20 @@ public class Group {
 		}
 	}
 	
+	/**
+	 * Prints out the body with the biggest area
+	 * @return the area of this body
+	 */
+	public double biggestBody() {
+		double max = 0;
+		for(Body b : this.bodies) {
+			if(b.area() > max) {
+				max = b.area();
+				System.out.println("Biggest Body:\n\t" + b.toString());
+			}
+		}
+		return max;
+	}
+	 
+	
 }
