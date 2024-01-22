@@ -5,9 +5,15 @@ public class Test {
 	public static void main(String[] args) {
 		
 		Rectangle r = new Rectangle(3, 4, 5, 2);
-		System.out.println(r);
-		System.out.println(r.circumference());
-		System.out.println(r.area());
+		Rectangle r2 = new Rectangle(1, 2, 3, 4);
+		
+		Group group = new Group();
+		
+		group.addBody(r);
+		group.addBody(r2);
+		group.printBodies();
+		group.overallArea();
+		group.biggestBody();
 		
 	}
 
