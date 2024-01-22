@@ -23,7 +23,7 @@ public class Circle extends Body {
 	}
 	
 	public String toString() {
-		return "Circle:\n\t" + "Radius: " + this.radius;
+		return "Circle:\n\t" + "Radius: " + this.radius + "\n\tCircumference: " + this.circumference() + "\n\tArea: " + this.area();
 	}
 	
 }

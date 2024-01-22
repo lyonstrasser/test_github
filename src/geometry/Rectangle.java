@@ -23,7 +23,8 @@ public class Rectangle extends Body {
 	}
 
 	public String toString() {
-		return "Rectangle:\n\t" + "Length: "  + this.length + "\n\tWidth: " + this.width;
+		return "Rectangle:\n\t" + "Length: "  + this.length + "\n\tWidth: " + this.width +
+				"\n\tCircumference: " + this.circumference() + "\n\tArea: " + this.area();
 	}
 	
 }

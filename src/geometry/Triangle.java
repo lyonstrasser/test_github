@@ -30,7 +30,7 @@ public class Triangle extends Body {
 		return "Triangle:\n\t" + "Length of site a: " + this.siteA + 
 				"\n\tLength of site b: " + this.siteB + 
 				"\n\tLength of site c: " + this.siteC + 
-				"\n\tHeigth: " + this.height;
+				"\n\tHeigth: " + this.height + "\n\tCircumference: " + this.circumference() + "\n\tArea: " + this.area();
 	}
 
 }
