@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Group {
 	
-	ArrayList<Body> bodies = new ArrayList<Body>();
+	public ArrayList<Body> bodies = new ArrayList<Body>();
 	
 	/**
 	 * Adds a body to the list of all bodies
