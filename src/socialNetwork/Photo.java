@@ -5,8 +5,8 @@ public class Photo extends Submission{
 	private String filename;
 	private String headline;
 	
-	public Photo(String user, String filename, String headline) {
-		this.setUsername(user);
+	public Photo(String username, String filename, String headline) {
+		super(username);
 		this.filename = filename;
 		this.headline = headline;
 	}
@@ -24,6 +24,9 @@ public class Photo extends Submission{
 		this.headline = headline;
 	}
 	
-	
+	public String toString() {
+		return "User: " + this.getUsername() + "\nHeadline: " + this.headline +
+				"\nFilename: " + this.filename + "\nLikes: " + this.getLikes();
+	}
 	
 }

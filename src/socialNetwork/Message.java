@@ -3,12 +3,11 @@ package socialNetwork;
 public class Message extends Submission {
 	
 	private String message;
-
-	public Message(String user, String message) {
-		this.setUsername(user);
+	
+	public Message(String username, String message) {
+		super(username);
 		this.message = message;
 	}
-	
 
 	public String getMessage() {
 		return message;
@@ -20,7 +19,7 @@ public class Message extends Submission {
 	
 	public String toString() {
 		return "User: " + this.getUsername() + "\nMessage: " + this.message +
-				"\nLikes: " + this.getLikes() + "\nComments: ";			// Zeitstempel? Liste der Kommentare?
+				"\nLikes: " + this.getLikes();
 	}
 
 	
