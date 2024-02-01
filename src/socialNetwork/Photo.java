@@ -26,7 +26,8 @@ public class Photo extends Submission{
 	
 	public String toString() {
 		return "User: " + this.getUsername() + "\nHeadline: " + this.headline +
-				"\nFilename: " + this.filename + "\nLikes: " + this.getLikes();
+				"\nFilename: " + this.filename + "\nLikes: " + this.getLikes() + 
+				"\nTimeSpan: vor" + this.calculateTimeSpan() + " erstellt";
 	}
 	
 }
