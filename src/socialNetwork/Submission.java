@@ -53,30 +53,25 @@ public abstract class Submission {
 		}
 	}
 	
-	public long calculateTimeSpan() {
+	public String calculateTimeSpan() {
 		long timeSpan = ChronoUnit.MINUTES.between(this.timestamp, LocalDateTime.now());
 		if(timeSpan < 60) {
-			System.out.println("Vor: " + timeSpan + " Minuten erstellt");
-			return timeSpan;
+			return "vor " + timeSpan + " Minuten erstellt";
 		} else if(timeSpan > 60 && timeSpan < (60*24)) {
 			timeSpan = ChronoUnit.HOURS.between(this.timestamp, LocalDateTime.now());
-			System.out.println("Vor: " + timeSpan + " Stunden erstellt");
-			return timeSpan;
+			return "vor " + timeSpan + " Stunden erstellt";
 		} else if(timeSpan > (60*24) && timeSpan < (60*24*7)) {
 			timeSpan = ChronoUnit.DAYS.between(this.timestamp, LocalDateTime.now());
-			System.out.println("Vor: " + timeSpan + " Tagen erstellt");
-			return timeSpan;
+			return "vor " + timeSpan + " Tagen erstellt";
 		} else if(timeSpan > (60*24*7) && timeSpan < (60*24*7*4)) {
 			timeSpan = ChronoUnit.WEEKS.between(this.timestamp, LocalDateTime.now());
-			System.out.println("Vor: " + timeSpan + " Wochen erstellt");
-			return timeSpan;
+			return "vor " + timeSpan + " Wochen erstellt";
 		} else if(timeSpan > (60*24*7*4) && timeSpan < (60*24*7*4*12)) {
 			timeSpan = ChronoUnit.MONTHS.between(this.timestamp, LocalDateTime.now());
-			System.out.println("Vor: " + timeSpan + " Monaten erstellt");
-			return timeSpan;
+			return "vor " + timeSpan + " Monaten erstellt";
 		} else {
-			System.out.println("Vor: " + timeSpan + " Jahren erstellt");
-			return ChronoUnit.YEARS.between(this.timestamp, LocalDateTime.now());
+			return "vor " + timeSpan + " Jahren erstellt";
+
 		}
 		
 	}
