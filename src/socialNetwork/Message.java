@@ -18,9 +18,9 @@ public class Message extends Submission {
 	}
 	
 	public String toString() {
-		return "User: " + this.getUsername() + "\nMessage: " + this.message +
-				"\nLikes: " + this.getLikes() + 
-				"\nTimeSpan: " + this.calculateTimeSpan();
+		return "Message:\n\tUser: " + this.getUsername() + "\n\tMessage: " + this.message +
+				"\n\tLikes: " + this.getLikes() + 
+				"\n\tTimeSpan: " + this.calculateTimeSpan();
 	}
 
 	
