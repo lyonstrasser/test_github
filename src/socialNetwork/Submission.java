@@ -38,21 +38,34 @@ public abstract class Submission {
 		this.likes = likes;
 	}
 	
-	
+	/**
+	 * Adds a like to a submission
+	 */
 	public void addLike() {
 		likes = this.likes + 1;
 	}
 	
+	/**
+	 * Adds a comment to a submission
+	 * @param c which comment
+	 */
 	public void addComment(Comment c) {
 		this.comments.add(c);
 	}
 	
+	/**
+	 * Prints all the comments from a submission
+	 */
 	public void printAllComments() {
 		for(Comment c : this.comments) {
 			System.out.println(c);
 		}
 	}
 	
+	/**
+	 * Calculates the timespan between the the submission was created and now
+	 * @return the timespan in minutes, hours, weeks,... on the console
+	 */
 	public String calculateTimeSpan() {
 		long timeSpan = ChronoUnit.MINUTES.between(this.timestamp, LocalDateTime.now());
 		if(timeSpan < 60) {
