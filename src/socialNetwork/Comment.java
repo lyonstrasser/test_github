@@ -4,10 +4,12 @@ public class Comment {
 	
 	private String user;
 	private String comment;
+	private int likes;
 	
 	public Comment (String user, String comment) {
 		this.user = user;
 		this.comment = comment;
+		this.likes = 0;
 	}
 	
 	public String getUser() {
@@ -27,5 +29,8 @@ public class Comment {
 		return "Comment:\n " + this.comment + "\nfrom:\n " + this.user;
 	}
 	
+	public void likeComment() {
+		this.likes += 1;
+	}
 
 }
