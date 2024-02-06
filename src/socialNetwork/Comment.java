@@ -24,7 +24,7 @@ public class Comment {
 	}
 	
 	public String toString() {
-		return "Comment:\n\t " + this.comment + "\nfrom:\n\t" + this.user;
+		return "Comment:\n " + this.comment + "\nfrom:\n " + this.user;
 	}
 	
 
