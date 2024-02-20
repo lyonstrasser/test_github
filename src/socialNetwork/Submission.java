@@ -10,6 +10,7 @@ public abstract class Submission {
 	private LocalDateTime timestamp;
 	private int likes;
 	private ArrayList<Comment> comments;
+	private ArrayList<String> hashtags;
 	
 	public Submission(String username) {
 		super();
@@ -17,6 +18,7 @@ public abstract class Submission {
 		this.timestamp = LocalDateTime.now();
 		this.likes = 0;
 		this.comments = new ArrayList<Comment>();
+		this.hashtags = new ArrayList<String>();
 	}
 	
 	public String getUsername() {
@@ -37,7 +39,13 @@ public abstract class Submission {
 	public void setLikes(int likes) {
 		this.likes = likes;
 	}
-	
+	public ArrayList<String> getHashtags() {
+		return hashtags;
+	}
+	public void setHashtags(ArrayList<String> hashtags) {
+		this.hashtags = hashtags;
+	}
+
 	/**
 	 * Adds a like to a submission
 	 */
@@ -87,6 +95,19 @@ public abstract class Submission {
 
 		}
 		
+	}
+	
+	public void addHashtag(String hashtag) {
+		this.hashtags.add(hashtag);
+	}
+	
+	public boolean hashtagIsAvailable(String hashtag) {
+		for(String s : hashtags) {
+			if(s.equals(hashtag)) {
+				return true;
+			}
+		}
+		return false;
 	}
 	
 }

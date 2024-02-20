@@ -27,6 +27,7 @@ public class Photo extends Submission{
 	public String toString() {
 		return "Photo:\n\tUser: " + this.getUsername() + "\n\tHeadline: " + this.headline +
 				"\n\tFilename: " + this.filename + "\n\tLikes: " + this.getLikes() + 
+				"\n\tHashtags: " + this.getHashtags() +
 				"\n\tTimeSpan: " + this.calculateTimeSpan();
 	}
 	

@@ -9,6 +9,7 @@ public class Video extends Photo {
 	public String toString() {
 		return "Video:\n\tUser: " + this.getUsername() + "\n\tHeadline: " + this.getHeadline() +
 				"\n\tFilename: " + this.getFileName() + "\n\tLikes: " + this.getLikes() + 
+				"\n\tHashtags: " + this.getHashtags() +
 				"\n\tTimeSpan: " + this.calculateTimeSpan();
 	}
 	

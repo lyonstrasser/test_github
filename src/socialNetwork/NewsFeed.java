@@ -55,5 +55,14 @@ public class NewsFeed {
 		}
 	}
 	
+	public void getSubmissionsFromHashtag(String hashtag) {
+		for(Submission s : newsfeed) {
+			if(s.hashtagIsAvailable(hashtag)) {
+				System.out.println(s);
+			}
+		}
+		
+	}
+	
 	
 }
