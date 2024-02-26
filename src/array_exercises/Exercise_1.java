@@ -1,6 +1,6 @@
 package array_exercises;
 
-public class exercise_1 {
+public class Exercise_1 {
 
 	public static int count5PercentJumps(int[] gains) {
 		int jumps = 0;

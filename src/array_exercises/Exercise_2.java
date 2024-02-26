@@ -1,6 +1,6 @@
 package array_exercises;
 
-public class exercise_2 {
+public class Exercise_2 {
 	
 	
 	public static boolean isProbablyApproaching(String[] signs) {
