@@ -14,7 +14,12 @@ public class ArrayQueue {
 		queue = new int[size];
 	}
 	
-	public  void queueEnqueue(int item) {
+	/**
+	 * The method checks if the capacity is full
+	 * If the capacity is not full, it should move the rear +1
+	 * @param item
+	 */
+	public void queueEnqueue(int item) {
 		if(rear == capacity) {
 			System.out.println("Queue ist voll");
 		} else {
@@ -23,6 +28,11 @@ public class ArrayQueue {
 		}
 	}
 	
+	/**
+	 * The method checks if the capacity if emtpy
+	 * If the capacity is not full, it moves the rear -1
+	 * @return
+	 */
 	public  int queueDequeue() {
 		int firstElement = 0;
 		if(rear == front) {
@@ -40,6 +50,9 @@ public class ArrayQueue {
 		return firstElement;
 	}
 	
+	/**
+	 * This method gives out the whole queue if it's not empty
+	 */
 	public void queueDisplay() {
 		if(front == rear) {
 			System.out.println("Queue is empty!");
@@ -50,6 +63,10 @@ public class ArrayQueue {
 		}
 	}
 	
+	/**
+	 * This method gives out the  first element of the queue if it's not empty
+	 * @return
+	 */
 	public int queueFront() {
 		// TODO erstes Element ohne Löschen zurückgeben
 		int firstElement = 0;
