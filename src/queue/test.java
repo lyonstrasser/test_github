@@ -2,15 +2,19 @@ package queue;
 
 public class test {
 	
-	ArrayQueue queue = new ArrayQueue(10);
-	
-	queue.queueEnqueue(3);
-	
-	queue.queueDequeue();
-	
-	queue.queueDisplay();
-	
-	queue.queueFront();
+	public static void main(String[] args) {
+		
+		ArrayQueue queue = new ArrayQueue(10);
+		
+		queue.queueEnqueue(5);
+		
+		queue.queueDequeue();
+		
+		queue.queueDisplay();
+		
+		queue.queueFront();
+		
+	}
 	
 	
 }
