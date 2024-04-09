@@ -1,7 +1,6 @@
 package stack_exercises;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class Exercise_1 {
 	
