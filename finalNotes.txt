@@ -1,0 +1,4 @@
+M : C
+L : 1/4
+K : C
+C, C e f g E F, A f' 
